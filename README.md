@@ -108,8 +108,26 @@ Produk lainnya yang direkomendasikan sebagian besar adalah T-shirt dengan skor k
    - Collaborative Filtering
    
    ![alt text](image-1.png)
-   
+  
+   Hasil dari model evaluation tersebut menunjukan model yang cukup baik:
+
+Epoch 1000/1000
+7/7 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - loss: 0.9019 - rmse: 0.9488 - val_loss: 1.4618 - val_rmse: 1.2085
+
    ![alt text](image-2.png)
+
+Model *collaborative filtering* telah menghasilkan rekomendasi produk yang dipersonalisasi untuk User ID 55, menampilkan 5 produk terbaik dengan prediksi rating. Berikut adalah beberapa insight dari hasil tersebut:
+
+1. **Preferensi Terhadap Dress**: Tiga produk teratas yang direkomendasikan adalah dress (ID Produk 316, 358, dan 15). Ini menunjukkan bahwa User 55 kemungkinan besar memiliki ketertarikan pada produk dress. Prediksi rating untuk produk ini relatif lebih tinggi dibandingkan produk lainnya, mengindikasikan kecocokan yang kuat antara pengguna dan produk.
+
+2. **Minat pada Sweater**: Produk dengan ID 796 dan 444, keduanya adalah sweater, juga muncul dalam daftar rekomendasi. Meskipun prediksi rating untuk sweater sedikit lebih rendah daripada dress, produk ini masih berada di peringkat yang cukup tinggi, menandakan bahwa User 55 memiliki minat yang moderat terhadap sweater.
+
+3. **Rentang Rating Produk**: Prediksi rating berkisar antara 3,18 hingga 3,46, yang menunjukkan bahwa model melihat produk-produk ini sebagai pilihan yang hampir sama relevan bagi User 55. Rentang rating yang konsisten ini mungkin menandakan bahwa pengguna memiliki ketertarikan yang seimbang antara kategori dress dan sweater, meskipun dress sedikit lebih unggul.
+
+4. **Potensi Keterlibatan Lebih Lanjut**: Produk dengan prediksi rating mendekati atau di atas 3,4 (Dress dengan ID 316 dan 358) mungkin memiliki peluang lebih besar untuk menarik perhatian pengguna (misalnya, klik atau pembelian). Menawarkan promosi atau menonjolkan produk-produk ini dalam rekomendasi bisa meningkatkan interaksi pengguna.
+
+5. **Strategi Pemasaran yang Potensial**: Berdasarkan daftar rekomendasi ini, User 55 dapat ditargetkan dengan kampanye pemasaran yang berfokus pada koleksi dress terbaru atau penawaran eksklusif untuk produk dress dan sweater.
+
    - Hybrid Model
 
 
