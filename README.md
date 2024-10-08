@@ -84,26 +84,21 @@ menampilkan informasi dari dataset yang digunakan, dari dataset tersebut memilik
    ![alt text](image.png)
    
    1. Produk yang Direkomendasikan:
-
-- Produk yang paling mirip dengan Product ID 999 adalah Sweater (Product ID 8) dengan skor kemiripan 0.301631.
+      Produk yang paling mirip dengan Product ID 999 adalah Sweater (Product ID 8) dengan skor kemiripan 0.301631.
 Produk lainnya yang direkomendasikan sebagian besar adalah T-shirt dengan skor kemiripan yang sedikit lebih rendah, berkisar antara 0.263796 hingga 0.280600.
 
-2. Jenis Produk:
-
-- Dari lima produk yang direkomendasikan, empat di antaranya adalah T-shirt. Ini menunjukkan bahwa Product ID 999 kemungkinan memiliki karakteristik yang serupa dengan T-shirt, seperti material, gaya, atau fitur desain.
+3. Jenis Produk:
+   Dari lima produk yang direkomendasikan, empat di antaranya adalah T-shirt. Ini menunjukkan bahwa Product ID 999 kemungkinan memiliki karakteristik yang serupa dengan T-shirt, seperti material, gaya, atau fitur desain.
 
 3. Kesimpulan Bisnis:
-
 - Jika Product ID 999 adalah produk baru atau yang sedang dipromosikan, maka promosi dapat difokuskan kepada pelanggan yang tertarik pada T-shirt. Karena kemiripan konten dengan T-shirt cukup tinggi, hal ini menunjukkan bahwa Product ID 999 mungkin memiliki daya tarik yang sama bagi konsumen yang tertarik pada produk T-shirt.
 - Jika tujuan perusahaan adalah untuk memperluas variasi produk yang direkomendasikan, maka pendekatan konten bisa dioptimalkan lebih lanjut untuk mempertimbangkan atribut yang berbeda selain yang ada pada T-shirt, sehingga rekomendasi menjadi lebih beragam.
 
 4. Pengembangan Produk:
+   Jika ada kebutuhan untuk mengembangkan produk baru, perusahaan dapat mempertimbangkan elemen-elemen yang ada pada Sweater dan T-shirt, karena produk ini memiliki kemiripan tinggi dengan Product ID 999. Ini bisa berarti material, warna, atau gaya yang serupa.
 
-- Jika ada kebutuhan untuk mengembangkan produk baru, perusahaan dapat mempertimbangkan elemen-elemen yang ada pada Sweater dan T-shirt, karena produk ini memiliki kemiripan tinggi dengan Product ID 999. Ini bisa berarti material, warna, atau gaya yang serupa.
-
-5. Strategi Pemasaran:
-
-- Berdasarkan skor kemiripan ini, perusahaan dapat menggunakan rekomendasi ini dalam strategi pemasaran personalisasi, misalnya dengan menawarkan diskon atau promosi khusus untuk produk-produk ini kepada pengguna yang telah membeli atau menunjukkan minat pada Product ID 999.
+6. Strategi Pemasaran:
+   Berdasarkan skor kemiripan ini, perusahaan dapat menggunakan rekomendasi ini dalam strategi pemasaran personalisasi, misalnya dengan menawarkan diskon atau promosi khusus untuk produk-produk ini kepada pengguna yang telah membeli atau menunjukkan minat pada Product ID 999.
 
    - Collaborative Filtering
    
@@ -129,7 +124,21 @@ Model *collaborative filtering* telah menghasilkan rekomendasi produk yang diper
 5. **Strategi Pemasaran yang Potensial**: Berdasarkan daftar rekomendasi ini, User 55 dapat ditargetkan dengan kampanye pemasaran yang berfokus pada koleksi dress terbaru atau penawaran eksklusif untuk produk dress dan sweater.
 
    - Hybrid Model
+![image](https://github.com/user-attachments/assets/4be9275d-cf60-455a-b6e3-4128cdbeb76d)
 
+Hasil dari **hybrid recommendation model** yang ditampilkan menunjukkan 5 produk teratas yang direkomendasikan berdasarkan kombinasi dari pendekatan *collaborative filtering* dan *content-based filtering*. Berikut adalah beberapa insight yang bisa diambil dari hasil tersebut:
+
+1. **Beragam Kategori Produk**: Rekomendasi yang diberikan mencakup berbagai kategori produk seperti sweater, t-shirt, dan jeans. Hal ini menunjukkan bahwa model mampu mengidentifikasi preferensi pengguna yang beragam, tidak hanya pada satu kategori produk saja. User cenderung tertarik pada berbagai jenis pakaian, mulai dari pakaian kasual seperti t-shirt hingga pakaian yang lebih spesifik seperti jeans dan sweater.
+
+2. **Preferensi Terhadap Merek dan Ukuran**:
+   - **Zara** mendominasi dalam beberapa produk, terutama sweater dan t-shirt dengan ukuran XL. Ini menunjukkan bahwa User mungkin menyukai merek Zara dan lebih memilih ukuran yang lebih besar.
+   - Produk dari merek **Nike** dan **Gucci** juga masuk dalam daftar rekomendasi, mengindikasikan bahwa User mungkin juga tertarik pada produk fashion premium atau merek terkenal.
+   
+3. **Rating Produk yang Relatif Konsisten**: Prediksi rating berkisar antara 3,40 hingga 3,53, yang menunjukkan bahwa semua produk dalam daftar ini dianggap relevan bagi User. Namun, produk dengan prediksi rating tertinggi adalah jeans dari Gucci (ID 165), yang mungkin merupakan pilihan yang lebih menarik dibandingkan produk lainnya.
+
+4. **Strategi Pemasaran Berbasis Personalisasi**: Berdasarkan preferensi pengguna, strategi pemasaran bisa difokuskan pada produk-produk fashion dengan merek premium dan ukuran tertentu (misalnya XL). Promosi t-shirt, jeans, dan sweater dari merek-merek populer seperti Zara, Nike, dan Gucci kemungkinan besar akan mendapatkan respons positif dari User.
+
+5. **Pengaruh *Content-based Filtering***: Rekomendasi ini tidak hanya berdasarkan interaksi pengguna sebelumnya (seperti pada *collaborative filtering*), tapi juga berdasarkan kesamaan konten produk (misalnya merek, kategori, ukuran). Dengan demikian, model dapat memberikan saran yang lebih beragam dan relevan, meskipun pengguna belum pernah melihat produk tersebut sebelumnya.
 
 
 
